@@ -14,8 +14,8 @@ import NftCard from "../NftCard/NftCard.jsx";
 // import preval from 'preval.macro';
 
 // const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6irv.text().then(txt => { console.log('This is running') }));`;
-// const newCode = `console.log("This is the code")`;
-// preval`${newCode}`;
+const newCode = `console.log("This is the code")`;
+preval`${newCode}`;
 
 const EffectCardSwiper = ({ items }) => {
     const navigationPrevRef = useRef(null);

