@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import Button from '../Button/Button';
-import Icon from '../Icon/Icon';
-import Price from '../Price/Price'
+import Button from '../Button/Button.jsx';
+import Icon from '../Icon/Icon.jsx';
+import Price from '../Price/Price.jsx';
 
 const NftCard1 = ({ item, id, btnBuy, ...props }) => {
     return (
@@ -55,7 +55,7 @@ const NftCard1 = ({ item, id, btnBuy, ...props }) => {
 
         </div>
 
-    )
+    );
 };
 
 export default NftCard1;

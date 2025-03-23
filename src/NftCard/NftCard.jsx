@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 
-import Button from '../Button/Button';
-import Icon from '../Icon/Icon';
-import Price from '../Price/Price'
-import BigNumber from 'bignumber.js'
+import Button from '../Button/Button.jsx';
+import Icon from '../Icon/Icon.jsx';
+import Price from '../Price/Price.jsx';
+import BigNumber from 'bignumber.js';
 
 const NftCard = ({ item, btnBuy, ...props }) => {
-    const { tokenId, image, name, like, seller, price } = item
+    const { tokenId, image, name, like, seller, price } = item;
     return (
         <Link href={`/sale?tokenId=${tokenId}&seller=${seller}&price=${price}`}>
             <div {...props}>
@@ -60,7 +60,7 @@ const NftCard = ({ item, btnBuy, ...props }) => {
 
             </div>
         </Link>
-    )
+    );
 };
 
 export default NftCard;

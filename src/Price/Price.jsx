@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../Icon/Icon";
+import Icon from "../Icon/Icon.jsx";
 
 const Price = ({ coin, amount, currency }) => {
     return (
@@ -11,7 +11,7 @@ const Price = ({ coin, amount, currency }) => {
                 {/* <span className="text-xl font-light">({currency} 3,278)</span> */}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Price;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HowItWorksTab = ({ activeTab, setActiveTab }) => {
     return (
@@ -13,8 +13,8 @@ const HowItWorksTab = ({ activeTab, setActiveTab }) => {
         ></div>
         <TabButton type='Customers' activeTab={activeTab} onClick={setActiveTab} />
       </div>
-    )
-  }
+    );
+  };
   
   const TabButton = ({ activeTab, type, onClick: setTab }) => {
     return (
@@ -27,7 +27,7 @@ const HowItWorksTab = ({ activeTab, setActiveTab }) => {
       >
         {type}
       </button>
-    )
-  }
+    );
+  };
 
 export default HowItWorksTab;

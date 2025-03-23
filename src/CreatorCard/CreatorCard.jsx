@@ -2,8 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 const CreatorCard = ({ item, id, ...props }) => {
-    return (
-        <div {...props}>
+    return <div {...props}>
             <div className='relative w-full h-32'>
                 <Image
                     src={`/assets/creators/${item.bgUrl}`}
@@ -24,8 +23,7 @@ const CreatorCard = ({ item, id, ...props }) => {
                 <span className='text-xl text-black/[0.8] mt-1 font-medium'>{item.name}</span>
                 <span className='text-base text-rolling-stone leading-[22px] px-7 mt-3 text-center'>{item.description}</span>
             </div>
-        </div>
-    )
+        </div>;
 };
 
 export default CreatorCard;

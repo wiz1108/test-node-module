@@ -1,9 +1,9 @@
 import React, { useState, Fragment } from "react";
-import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronDownIcon } from '@heroicons/react/solid'
+import { Listbox, Transition } from '@headlessui/react';
+import { CheckIcon, ChevronDownIcon } from '@heroicons/react/solid';
 
 const List = ({ label, items, ...props }) => {
-  const [selected, setSelected] = useState(items[0])
+  const [selected, setSelected] = useState(items[0]);
   return (
     <div {...props}>
       {
@@ -59,7 +59,7 @@ const List = ({ label, items, ...props }) => {
         </div>
       </Listbox>
     </div>
-  )
-}
+  );
+};
 
 export default List;

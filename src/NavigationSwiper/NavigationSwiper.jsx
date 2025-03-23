@@ -8,9 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Image from "next/image";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
-import Button from "../Button/Button";
-import CreatorCard from "../CreatorCard/CreatorCard";
-import NftCard from "../NftCard/NftCard";
+import Button from "../Button/Button.jsx";
+import CreatorCard from "../CreatorCard/CreatorCard.jsx";
+import NftCard from "../NftCard/NftCard.jsx";
 
 const NavigationSwiper = ({ type, titleImg, title, moreBtn, items, ...props }) => {
     const navigationPrevRef = useRef(null);
@@ -69,7 +69,7 @@ const NavigationSwiper = ({ type, titleImg, title, moreBtn, items, ...props }) =
                 ))}
 
             </Swiper>
-        </div>)
-}
+        </div>);
+};
 
 export default NavigationSwiper;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classnames from 'classnames';
-import Icon from "../Icon/Icon";
+import Icon from "../Icon/Icon.jsx";
 
 const CategoryMenu = () => {
     const [active, setActive] = useState({});
@@ -12,13 +12,13 @@ const CategoryMenu = () => {
         { name: 'Services', icon: 'technology' },
         { name : "Brand", icon : 'copyright'},
         { name : "Tickets", icon : 'ticket'},
-    ]
+    ];
 
     const categoryClicked = (item) => {
         setActive(item);
     };
-    return (
-        <div className="flex flex-col">
+
+    return <div className="flex flex-col">
             <p className="text-base font-medium text-trout mb-1.5">Categories</p>
             <div className="w-56 py-3 bg-white rounded-2xl">
 
@@ -33,8 +33,7 @@ const CategoryMenu = () => {
                     </div>
                 ))}
             </div>
-        </div>
-    )
+        </div>;
 };
 
 export default CategoryMenu;

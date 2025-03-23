@@ -17,7 +17,7 @@ const Notification = ({ avatar, time, children }) => {
             </div>
 
         </div>
-    )
-}
+    );
+};
 
 export default Notification;

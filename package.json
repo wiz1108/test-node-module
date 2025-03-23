@@ -2,8 +2,13 @@
   "name": "test-node-module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,19 +16,28 @@
   "license": "ISC",
   "sourceType": "module",
   "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
     "bignumber.js": "^9.0.2",
     "classnames": "^2.3.1",
     "next": "^12.1.4",
     "preval.macro": "^5.0.0",
     "react": "17.0.2",
     "react-toastify": "^8.2.0",
+    "rollup": "^4.37.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "swiper": "^8.0.6"
   },
   "peerDependencies": {
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
-
 }

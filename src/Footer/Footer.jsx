@@ -1,15 +1,15 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 import { MailIcon } from "@heroicons/react/solid";
-import Button from '../Button/Button';
-import Link from 'next/link'
+import Button from '../Button/Button.jsx';
+import Link from 'next/link';
 
 function NavLink({ to, children, ...props }) {
     return <a href={to} {...props}>
         {children}
-    </a>
-}
+    </a>;
+};
 
 const Footer = () => {
     const footerLinks = [
@@ -102,8 +102,8 @@ Please reach out to us on the email below for any suggestions, partnerships, com
                 <Button type="button" icon="copyright" iconClass="mr-2 text-white" className='flex items-center text-white/[0.5]'>2022 PayByMint inc.</Button>
             </div>
         </div >
-    )
-}
+    );
+};
 
 
 export default Footer;
