@@ -1,9 +1,10 @@
 {
-  "name": "test-node-module",
+  "name": "paybymint-uikit",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist"
   ],
@@ -41,3 +42,5 @@
     "react-dom": "17.0.2"
   }
 }
+
+
