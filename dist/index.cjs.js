@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var React = require('react');
 var require$$0 = require('path');
 var require$$1 = require('util');
@@ -3539,7 +3537,7 @@ function is(selector) {
   return false;
 }
 
-function index$1() {
+function index() {
   let child = this[0];
   let i;
 
@@ -3808,7 +3806,7 @@ const Methods = {
   html,
   text,
   is,
-  index: index$1,
+  index,
   eq,
   append,
   prepend,
@@ -17618,21 +17616,17 @@ var Search = function Search(_ref) {
   })));
 };
 
-var index = {
-  Button: Button,
-  CategoryMenu: CategoryMenu,
-  CreatorCard: CreatorCard,
-  EffectCardSwiper: EffectCardSwiper,
-  Footer: Footer,
-  HowItWorksTabs: HowItWorksTab,
-  Icon: Icon,
-  List: List,
-  NavigationSwiper: NavigationSwiper,
-  NftCard: NftCard,
-  NftCard1: NftCard1,
-  Notification: Notification,
-  Price: Price,
-  Search: Search
-};
-
-exports.default = index;
+exports.Button = Button;
+exports.CategoryMenu = CategoryMenu;
+exports.CreatorCard = CreatorCard;
+exports.EffectCardSwiper = EffectCardSwiper;
+exports.Footer = Footer;
+exports.HowItWorksTabs = HowItWorksTab;
+exports.Icon = Icon;
+exports.List = List;
+exports.NavigationSwiper = NavigationSwiper;
+exports.NftCard = NftCard;
+exports.NftCard1 = NftCard1;
+exports.Notification = Notification;
+exports.Price = Price;
+exports.Search = Search;

@@ -1,31 +1,14 @@
-import Button from './Button/Button.jsx'
-import CategoryMenu from './CategoryMenu/CategoryMenu.jsx'
-import CreatorCard from './CreatorCard/CreatorCard.jsx'
-import EffectCardSwiper from './EffectCardSwiper/EffectCardSwiper.jsx'
-import Footer from './Footer/Footer.jsx'
-import HowItWorksTabs from './HowItWorksTabs/HowItWorksTabs.jsx'
-import Icon from './Icon/Icon.jsx'
-import List from './List/List.jsx'
-import NavigationSwiper from './NavigationSwiper/NavigationSwiper.jsx'
-import NftCard from './NftCard/NftCard.jsx'
-import NftCard1 from './NftCard/NftCard1.jsx'
-import Notification from './Notification/Notification.jsx'
-import Price from './Price/Price.jsx'
-import Search from './Search/Search.jsx'
-
-export default {
-  Button,
-  CategoryMenu,
-  CreatorCard,
-  EffectCardSwiper,
-  Footer,
-  HowItWorksTabs,
-  Icon,
-  List,
-  NavigationSwiper,
-  NftCard,
-  NftCard1,
-  Notification,
-  Price,
-  Search
-}
+export { default as Button } from './Button/Button.jsx';
+export { default as CategoryMenu } from './CategoryMenu/CategoryMenu.jsx';
+export { default as CreatorCard } from './CreatorCard/CreatorCard.jsx';
+export { default as EffectCardSwiper } from './EffectCardSwiper/EffectCardSwiper.jsx';
+export { default as Footer } from './Footer/Footer.jsx';
+export { default as HowItWorksTabs } from './HowItWorksTabs/HowItWorksTabs.jsx';
+export { default as Icon } from './Icon/Icon.jsx';
+export { default as List } from './List/List.jsx';
+export { default as NavigationSwiper } from './NavigationSwiper/NavigationSwiper.jsx';
+export { default as NftCard } from './NftCard/NftCard.jsx';
+export { default as NftCard1 } from './NftCard/NftCard1.jsx';
+export { default as Notification } from './Notification/Notification.jsx';
+export { default as Price } from './Price/Price.jsx';
+export { default as Search } from './Search/Search.jsx';
