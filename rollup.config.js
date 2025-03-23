@@ -19,6 +19,7 @@ export default {
       exports: 'named',
     },
   ],
+  external: ['react', 'react-dom'],
   plugins: [
     peerDepsExternal(),
     json(),
