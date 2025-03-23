@@ -17038,6 +17038,8 @@ var NftCard = function NftCard(_ref) {
 
 var EffectCardSwiper = function EffectCardSwiper(_ref) {
   var items = _ref.items;
+  React.useEffect(function () {
+  }, []);
   var navigationPrevRef = React.useRef(null);
   var navigationNextRef = React.useRef(null);
   return /*#__PURE__*/React.createElement("div", {

