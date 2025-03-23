@@ -3517,7 +3517,7 @@ function is(selector) {
   return false;
 }
 
-function index() {
+function index$1() {
   let child = this[0];
   let i;
 
@@ -3786,7 +3786,7 @@ const Methods = {
   html,
   text,
   is,
-  index,
+  index: index$1,
   eq,
   append,
   prepend,
@@ -17596,7 +17596,7 @@ var Search = function Search(_ref) {
   })));
 };
 
-module.exports = {
+var index = {
   Button: Button,
   CategoryMenu: CategoryMenu,
   CreatorCard: CreatorCard,
@@ -17612,3 +17612,5 @@ module.exports = {
   Price: Price,
   Search: Search
 };
+
+export { index as default };

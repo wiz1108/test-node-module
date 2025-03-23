@@ -13,7 +13,7 @@ import Notification from './Notification/Notification.jsx'
 import Price from './Price/Price.jsx'
 import Search from './Search/Search.jsx'
 
-module.exports = {
+export default {
   Button,
   CategoryMenu,
   CreatorCard,
